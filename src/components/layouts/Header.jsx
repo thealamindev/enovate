@@ -5,6 +5,7 @@ import Image from "../Image";
 import logo from "../../assets/logo.png";
 import { FaAngleDown } from "react-icons/fa6";
 import Button from "../Button";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -12,18 +13,26 @@ const Header = () => {
       <Container>
         <Flex className={"justify-between"}>
           <div className="">
+           <Link to={'/'}>
             <Image src={logo} />
+           </Link>
           </div>
           <div className="">
             <ul className="flex items-center gap-x-4">
-              <li className="flex items-center">
-                Home <FaAngleDown />
+              <li>
+                <Link to={"/"}  className="flex items-center">
+                  Home <FaAngleDown />
+                </Link>
               </li>
-              <li className="flex items-center">
-                Home <FaAngleDown />
+
+              <li>
+                <Link to={"/about"}  className="flex items-center">
+                  About <FaAngleDown />
+                </Link>
               </li>
+
               <li className="flex items-center">
-                Home <FaAngleDown />
+                Service <FaAngleDown />
               </li>
               <li className="flex items-center">
                 Home <FaAngleDown />
