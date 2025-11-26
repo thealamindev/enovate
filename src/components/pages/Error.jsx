@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "../Image";
-import errorGif from "/src/assets/error.gif";
+import errorGif from "/error.gif";
 import { useNavigate } from "react-router-dom";
 const Error = () => {
   const navigate = useNavigate();
