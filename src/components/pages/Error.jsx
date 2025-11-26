@@ -12,7 +12,7 @@ const Error = () => {
     <>
       <Image className={"w-full h-screen"} src={errorGif} />
       <button onClick={handleClick} className="bg-red-400 p-3">
-        Go To Home & Plz Don't Cry
+        Go To Home & Plz Don't Cry..!
       </button>
     </>
   );
